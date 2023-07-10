@@ -14,7 +14,7 @@ services:
     ports:
         - 15432:5432
     volumes:
-      - ./../database/psql-data:/var/lib/mysql:rw
+      - ./postgres-data:/var/lib/postgresql/data
       - ./postgresql/postgresql.conf:/usr/share/postgresql/postgresql.conf  
 
   php-fpm:
